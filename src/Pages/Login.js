@@ -18,7 +18,7 @@ export const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://node-mailer-backend.vercel.app/api/auth/login', formData);
+      const res = await axios.post('https://node-mailer-backend.vercel.app/login', formData);
       console.log(res.data);
       localStorage.setItem('token', res.data.token);
       toast.success('You have logged in successfully!');
