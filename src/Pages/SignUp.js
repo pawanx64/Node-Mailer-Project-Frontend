@@ -20,7 +20,7 @@ export const SignUp = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        "https://node-mailer-backend.vercel.app/api/auth/signup",
         formData
       );
       console.log(res.data);
